@@ -1,0 +1,7 @@
+nrp sum(a as int, b as int) <int>
+az
+    returntest :: int = 0;
+    scan(fntest)
+    returntest = a * b;
+    matin list(returntest)
+morteza
