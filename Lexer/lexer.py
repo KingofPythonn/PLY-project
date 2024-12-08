@@ -55,4 +55,4 @@ class Lexer:
             LINE, TOK, VALUE, COL = str(tok.lineno), str(tok.type), str(tok.value), str(tok.lexpos - line_start + 1)
             # Print token information formatted in the table
             print(
-                f"| {LINE.strip().center(max_lengths[0])} | {COL.strip().center(max_lengths[1])} | {VALUE.strip().center(max_lengths[2])} | {TOK.strip().center(max_lengths[2])} |")
+                f"| {LINE.strip().center(max_lengths[0])} | {COL.strip().center(max_lengths[1])} | {TOK.strip().center(max_lengths[2])} | {VALUE.strip().center(max_lengths[2])} |")

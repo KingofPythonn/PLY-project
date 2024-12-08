@@ -29,18 +29,19 @@ class Token:
     # Regex Rules For Simple Tokens
     ##KEYWOARDS:
     # Define regular expressions for keywords and assign token names to them
-    t_FN = r'nrp'
-    t_RETURN = r'matin'
+    t_FN = r'fn'
+    t_RETURN = r'return'
     t_NULL_TYPE = r'null'
     t_AS = r'as'
-    t_BEGIN = r'az'
-    t_END = r'morteza'
+    t_BEGIN = r'begin'
+    t_END = r'end'
     t_TO = r'to'
     t_SCAN = r'scan'
-    t_PRINT = r'list'
+    t_PRINT = r'print'
     t_LIST = r'list'
     t_LENGTH = r'length'
     t_EXIT = r'exit'
+
 
     ##Punctuation and Delimiters:
     # Define regular expressions for punctuation and delimiters and assign token names to them
@@ -137,28 +138,29 @@ class Token:
         r'[a-zA-Z_][a-zA-Z0-9_]*'
 
         keywords = {
-            'nrp': 'FN',
-            'as': 'AS',
-            'az': 'BEGIN',
-            'morteza': 'END',
-            'int': 'INT_TYPE',
-            'vector': 'VECTOR_TYPE',
-            'boolean': 'BOOLEAN_TYPE',
-            'string': 'STR_TYPE',
-            'null': 'NULL_TYPE',
-            'var': 'VAR',
-            'matin': 'RETURN',
-            'for': 'FOR_LOOP',
-            'while': 'WHILE_LOOP',
-            'if': 'IF',
-            'else': 'ELSE',
-            'to': 'TO',
-            'scan': 'SCAN',
-            'print': 'PRINT',
-            'list': 'LIST',
-            'length': 'LENGTH',
-            'exit': 'EXIT'
-        }
+         'fn': 'FN',
+         'as': 'AS',
+        'begin': 'BEGIN',
+        'end': 'END',
+        'int': 'INT_TYPE',
+        'vector': 'VECTOR_TYPE',
+        'str': 'STR_TYPE',
+        'boolean': 'BOOL_TYPE',
+        'null': 'NULL_TYPE',
+        'var': 'VAR',
+        'return': 'RETURN',
+        'for': 'FOR_LOOP',
+        'while': 'WHILE_LOOP',
+        'if': 'IF',
+        'else': 'ELSE',
+        'to': 'TO',
+        'scan': 'SCAN',
+        'print': 'PRINT',
+        'list': 'LIST',
+        'length': 'LENGTH',
+        'exit': 'EXIT',
+        
+     }
         # Check if the identifier is a keyword, update token type accordingly
         t.type = keywords.get(t.value, 'IDENTIFIER')
         return t

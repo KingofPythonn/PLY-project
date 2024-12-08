@@ -1,7 +1,10 @@
-nrp sum(a as int, b as int) <int>
-az
-    returntest :: int = 0;
-    scan(fntest)
-    returntest = a * b;
-    matin list(returntest)
-morteza
+fn sum(numlist as vector) <int>{
+    result :: int = 0;
+
+    for(i = 0 to length(numlist))
+    begin
+        result = result + numlist[i];
+    end
+
+    return result;
+}
