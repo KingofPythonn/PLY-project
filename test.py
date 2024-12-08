@@ -6,3 +6,5 @@ if __name__ == '__main__':
 
     program = Lexer(data)
     program.run()
+
+    
